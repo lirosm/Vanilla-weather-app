@@ -14,8 +14,10 @@
     <title>Vanilla Weather App</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container"> 
+      <div class="weather-app-wrapper">
       <div class="weather-app">
+       <div class="overview">
         <h1>
             Oslo
         </h1>
@@ -27,11 +29,19 @@
                 clear
             </li>
         </ul>
+      </div>
     <div class="row">
         <div class="col-6">
-            <img src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png" alt="weather-icon"
-            />
-            12'C | 66'F
+          <div class="clearfix weather-temp">
+            <img 
+            src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png" 
+            alt="weather-icon"
+            class="float-left"
+          />
+            <div class="float-left">
+            <strong>12</strong><span  class="units">°C | <a href="#">°F</a> </span>
+            </div>
+          </div>
         </div>
         <div class="col-6">
             <ul>
@@ -47,12 +57,18 @@
             </ul>
         </div>
     </div>
-    <small>
-      <a href="https://zen-booth-8a5b3b.netlify.app/" target="_blank"> Open-source code</a> 
+    </div>
+      <small>
+      <a 
+      href="https://zen-booth-8a5b3b.netlify.app/" 
+      target="_blank"
+      > Open-source code</a
+      > 
       , by Liriona Osmani 
-    </small>
+      </small>
       </div>
     </div>
+
     <script src="src/java.js"></script>
 </body>
 </html>
