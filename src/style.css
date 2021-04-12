@@ -1,0 +1,41 @@
+
+body {
+    font-family: Cerebri-Sans,Helvetica,Arial,sans-serif
+}
+
+.weather-app{
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #878787;
+
+}
+
+h1 {
+
+    line-height: 29px;
+    font-weight: 700;
+    font-size: 38px;
+    color: #272142;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #272142 ;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 25px;
+
+
+}
+
+
+
