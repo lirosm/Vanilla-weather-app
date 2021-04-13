@@ -19,6 +19,7 @@ ul {
 
 
 li{
+    text-transform: capitalize;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -32,7 +33,7 @@ li{
 
 
 .weather-app-wrapper {
-     max-width: 600px;
+     max-width: 650px;
     margin: 30px auto;
 }
 
