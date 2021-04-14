@@ -11,13 +11,13 @@ minutes = `0${minutes}`;
 }
 
 let days = [
-     "Sun",
-     "Mon", 
-     "Tue", 
-     "Wed", 
-     "thu", 
-     "fri", 
-     "Sat"
+     "Sunday",
+     "Monday", 
+     "Tuesday", 
+     "Wednesday", 
+     "Thursday", 
+     "Friday", 
+     "Saturday"
     ];
 
 let day = days [date.getDay()];
