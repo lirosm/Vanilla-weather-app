@@ -12,6 +12,9 @@
     crossorigin="anonymous">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
        <link rel="stylesheet" href="src/style.css"/>
     <title>Vanilla Weather App</title>
 </head>
@@ -23,7 +26,7 @@
           <div class="row">
             <div class="col-9">
           <input type="search" 
-          placeholder="Type in a city..." 
+          placeholder="City..." 
           class="form-control"
           id="city-input"
           autocomplete="off"
@@ -36,32 +39,37 @@
         </div>
         </div>
         </form>
+        
+        <div class= "center">
        <div class="overview">
         <h1 id="city">
             Oslo
         </h1>
         <ul>
-            <li>Last updated: <span id="date"></span> </li>
+            <li>updated: <span id="date"></span> </li>
             <li id="description">
             </li>
         </ul>
       </div>
+      
     <div class="row">
-        <div class="col-6">
-          <div class="clearfix weather-temp">
+        <div class="col-4">
+          <div class="d-flex weather-temp">
             <img 
             src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png" 
             alt="weather-icon"
             id="icon"
             class="float-left"
           />
-            <div class="float-left">
-            <strong id="temperature"></strong
+            <div
+            class="float-left">
+            <span
+            id="temperature"></span
               ><span class="units">°C</span>
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-6 d-flex justify-content-end">
             <ul>
               <li>
                 Feels like: <span id="feels-like"></span>°C
@@ -74,11 +82,11 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </div></div>
     <div class="weather-forecast" id="Forecast">
-   
     </div>
-    </div>
+
+    <footer>
       <small>
       <a 
       href="https://github.com/lirosm/Vanilla-weather-app" 
@@ -86,9 +94,11 @@
       > Open-source code</a
       > 
       , by Liriona Osmani 
-      </small>
+    </footer></small>
+    </div>
       </div>
     </div>
     <script src="src/java.js"></script>
 </body>
 </html>
+

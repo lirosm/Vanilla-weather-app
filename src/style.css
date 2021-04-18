@@ -1,20 +1,28 @@
 
+
 body {
-    font-family: Cerebri-Sans,Helvetica,Arial,sans-serif
+
+font-family: 'Open Sans Condensed', sans-serif;
+
+background-color: rgb(72, 71, 73);
 }
+
 
 
 h1 {
 
-    line-height: 29px;
+    line-height: 80px;
     font-weight: 700;
-    font-size: 38px;
-    color: #272142;
+    font-size: 50px;
+    color: whitesmoke;
 }
 
 ul {
     margin: 0;
     padding: 0;
+   margin: left;
+  
+    
 }
 
 
@@ -23,24 +31,55 @@ li{
     margin: 0;
     padding: 0;
     list-style: none;
-    color: #272142 ;
-    font-size: 16px;
+    color: whitesmoke;
+    font-size: 20px;
     font-weight: 100;
-    line-height: 25px;
-
-
+   
 }
+
+
+
+.btn-primary {
+    color: #212529;
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+.btn-primary:hover {
+    color: #212529;
+    background-color: #626666;
+    border-color:  #626666;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 .2rem rgba(73, 75, 75, 0.5)
+}
+
+
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: whitesmoke;
+}
+
 
 li::first-letter{
     text-transform: capitalize;
 }
 .weather-app-wrapper {
-     max-width: 650px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     max-width: 800px;
     margin: 30px auto;
+ background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+ background-blend-mode: normal, lighten, soft-light;
+    
+    
 }
 
 .weather-app{
-   
+   margin-top: 200px;
     padding: 20px;
     border: 1px solid #878787;
 
@@ -53,21 +92,35 @@ li::first-letter{
 .weather-temp img {
     margin-right: 15px;
     height: 65px;
-    width: 65px;
-
+    width: 100px;
+    color: whitesmoke;
+    
 }
 
-.weather-temp strong {
-    color: #272142 ;
-    font-size: 45px;
+.icon {
+    text-align: center;
+}
+
+.temperature {
+    text-align: center;
+}
+
+.weather-temp  {
+    color: whitesmoke ;
+    font-size: 80px;
     font-weight: 400px;
     line-height: 1;
+    text-align: center;
+  
+  
 }
 
 .weather-temp .units {
 position: relative;
-font-size: 16px;
+font-size: 45px;
 top: -25px;
+color: whitesmoke;
+
 
 }
 
@@ -84,9 +137,11 @@ top: -25px;
 
 .weather-forecast-date {
     font-size: 20px;
-    color: black;
+    color: whitesmoke;
 }
 
 .weather-forecast-temp{
     font-size: 13px;
+    color: whitesmoke;
 }
+
