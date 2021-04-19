@@ -43,6 +43,7 @@ text-align: center;
 
 
 
+
 .btn-primary {
     color: #212529;
     background-color: whitesmoke;
@@ -142,10 +143,16 @@ color: whitesmoke;
 .weather-forecast-date {
     font-size: 20px;
     color: whitesmoke;
-}
+   
+}  
 
 .weather-forecast-temp{
     font-size: 13px;
     color: whitesmoke;
+}
+
+hr {
+    color: whitesmoke;
+    
 }
 
