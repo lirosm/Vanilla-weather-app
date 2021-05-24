@@ -1,3 +1,66 @@
+import React from "react";
+import WeatherSearch from "./WeatherSearch.js";
+import "./styles.css";
+
+
+export default function App() {
+  return (
+    <div className="App">
+      <h1>Weather search Engine</h1>
+      <WeatherSearch />
+     
+    </div>
+  );
+}
+
+
+import React, { useState } from "react";
+
+export default function WeatherSearch() {
+  const [city, setCity] = useState("");
+  const [message, setMessage] = useState("");
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    setMessage(`It is currently 20°C in ${city}`);
+  }
+
+  function changeCity(event) {
+    setCity(event.target.value);
+  }
+
+  return (
+    <div className="WeatherSearch">
+      <form onSubmit={handleSubmit}>
+        <input type="search" placeholder="Type a city" onChange={changeCity} />
+        <input type="submit" value="Search" />
+      </form>
+      <h2>{message}</h2>
+    </div>
+  );
+}
+
+
+
+
+import { StrictMode } from "react";
+import ReactDOM from "react-dom";
+
+import App from "./App";
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+  rootElement
+);
+
+
+
+
+
+
 function formatDate(timestamp) {
 let date = new Date (timestamp);
 let hours = date.getHours();
